@@ -21,7 +21,7 @@ uv_loop_t *loop = uv_default_loop();
 void thread_work(uv_work_t *req) {
     // 这里执行阻塞或耗时的任务
     int i = 0;
-    while (i < 5) {
+    while (i < 100) {
         printf("do work.....\n");
         uv_sleep(1000);
         i++;
